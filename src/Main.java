@@ -30,7 +30,7 @@ public class Main {
 
         algo.getValeur(12586269025L);
          */
-
+        /*
         Promo promo = new Promo(2025);
         Etudiant etu = new Etudiant("Victor");
         Etudiant etu2 = new Etudiant("Damien");
@@ -72,5 +72,17 @@ public class Main {
         System.out.println("Meilleure note de la promo en Java : " + promo.meilleureNote(java));
         System.out.println("Meilleure note de la promo en C++ : " + promo.meilleureNote(cpp));
         promo.afficherClassement();
+        */
+
+        MesJeux jeux = new MesJeux();
+        jeux.addJeu("Elden Ring", 16);
+        jeux.addJeu("WRC", 3);
+        jeux.addJeu("Elden Ring", 16);
+
+        System.out.println("Nombre de jeux : " + jeux.size());
+
+        jeux.removeJeu("WRC");
+        System.out.println("Après suppression, nombre de jeux : " + jeux.size());
+
     }
 }
